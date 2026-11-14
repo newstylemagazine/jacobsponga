@@ -31,7 +31,7 @@ body {
 
 a { color: black; text-decoration: none; }
 
-.container { max-width: 600px; margin: 0 auto; padding: 0 40px; }
+.container { max-width: 760px; margin: 0 auto; padding: 0 40px; }
 
 /* Header */
 header { text-align: center; padding: 20px; }
@@ -53,7 +53,8 @@ header h1 a:hover { color: #888; }
 main { padding: 40px 0 80px; min-height: calc(100vh - 300px); }
 
 /* Writing list: title with date underneath, left-aligned */
-body.writing-page .container { max-width: 600px; }
+body.writing-page .container { max-width: 760px; }
+@media (min-width: 769px) { .post-meta h3 { white-space: nowrap; } }
 
 .post-constellation {
     display: flex;

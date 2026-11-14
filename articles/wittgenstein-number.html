@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expressing a numerical and contingently true proposition with Wittgenstein's definition of number - Jacob Sponga</title>
+    <link rel="stylesheet" href="../styles.css?v=4">
+    <script>
+        window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="../index.html">Jacob Sponga</a></h1>
+    </header>
+
+    <main class="container">
+        <p class="story-title">Expressing a numerical and contingently true proposition with Wittgenstein's definition of number</p>
+        <p class="story-author">Jacob Sponga</p>
+
+        <div class="story-spacer"></div>
+
+        <div class="story-body">
+            <p>Max Black, on numbers in the <i>Tractatus</i>, writes:</p>
+
+            <blockquote>
+                <p>It may be possible to construct a formal arithmetic along the lines that Wittgenstein here indicated. But it might reasonably be objected that Wittgenstein's sketch does not begin to do justice to the &lsquo;logic&rsquo; of numbers in ordinary language. Wittgenstein here seems to be adhering to Russell's programme of substituting, a constructed concept, for the less tidy numerical concepts already in use. It is hard to see how, on his conception, we are to make sense of, say, a proposition like &lsquo;Tom was the third man to speak&rsquo;, involving a number but contingently true. Russell, whose analytic Wittgenstein rejects (6.031 <i>a</i>), bore the applications of arithmetic to counting in mind; Wittgenstein seems to have made no provision for such application (313&ndash;4).</p>
+            </blockquote>
+
+            <p>As a reminder, 6.02 in the <i>Tractatus</i> states:</p>
+
+            <blockquote>
+                <p>And <i>this</i> is how we arrive at numbers. I give the following definitions:</p>
+                <p>$$x = \Omega^{0}{'}x \text{ Def.}$$</p>
+                <p>$$\Omega'\Omega^{v}{'}x = \Omega^{v+1}{'}x \text{ Def.}$$</p>
+            </blockquote>
+
+            <p>I thought it would be fun to try to try and represent the phrase &lsquo;Tom was the third man to speak&rsquo; using Wittgenstein's definition of number. Here it is:</p>
+
+            <div class="math-block">
+            \[\begin{aligned}
+            P^{3'}x = & \text{def.}\,\exists\varphi \\
+             & \quad\left( \left( Px \rightarrow P^{1'}x \right) \leftrightarrow \left( \neg\left( \neg Px \land P^{1'}x \right) \right) \right) \\
+             & \quad\quad\quad \rightarrow \left( \left( P^{1'}x \rightarrow Py \right) \leftrightarrow \left( \neg\left( \neg P^{1'}x \land Py \right) \right) \right) \\
+             & \quad\quad\quad\quad\quad \rightarrow \left( Py \rightarrow \left( ( P'P^{1'}x = \text{def.}\, P^{2'}x \right)\,\right) \\
+             & \quad\quad\quad\quad\quad\quad\quad \rightarrow \left( \left( P^{2'}x \rightarrow Pz \right) \leftrightarrow \left( \neg\left( \neg P^{2'}x \land Pz \right) \right) \right) \\
+             & \quad\quad\quad\quad\quad\quad\quad\quad\quad \rightarrow \left( Pz \rightarrow \left( P'P'P^{1'}x = \text{def.}\, P^{3'}x\right) \right)
+            \end{aligned}\]
+            </div>
+
+            <p><i>Py</i> and <i>Pz</i>, of course, are second and third men to speak. We use <i>x</i> to keep track of their term in the sequence of speakers. We use $\varphi$ to represent some instance of sequence.</p>
+
+            <p>I think I had Carnap's very elegant definition of the number two in the back of my mind when while writing this. Requisite to grasping fully his definition of the number is his definition of $\mathrm{2}_{m}(f)$, which means &ldquo;at least two objects fall under the concept <i>f</i>.&rdquo; Thus the definition:</p>
+
+            <div class="math-block">
+            $$2_m =_{\text{def.}} ((\exists x) \wedge (\exists y)) (\neg (x = y) \wedge f(x) \wedge f(y))$$
+            </div>
+
+            <p>So the number two is defined:</p>
+
+            <div class="math-block">
+            \[2(f) =_{\text{def.}} \mathrm{2}_{m}(f) \wedge \neg \mathrm{3}_{m}(f)\]
+            </div>
+        </div>
+
+        <div class="back-link">
+            <a href="../index.html">← Back</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jacob Sponga</p>
+    </footer>
+</body>
+</html>

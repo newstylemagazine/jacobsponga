@@ -52,15 +52,15 @@ header h1 a:hover { color: #888; }
 /* Main */
 main { padding: 40px 0 80px; min-height: calc(100vh - 300px); }
 
-/* Writing list: one line per article */
+/* Writing list: title with date underneath, left-aligned */
 body.writing-page .container { max-width: 600px; }
 
 .post-constellation {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 22px;
-    text-align: center;
+    text-align: left;
 }
 
 .post-link { display: block; color: inherit; }
@@ -68,12 +68,10 @@ body.writing-page .container { max-width: 600px; }
 
 .post-meta h3,
 .post-date {
-    display: inline;
     font-size: 1.05em;
     font-weight: normal;
     margin: 0;
 }
-.post-date::before { content: " \2014  "; }
 
 .post-card:hover .post-meta,
 .post-card:focus-within .post-meta { color: #888; }

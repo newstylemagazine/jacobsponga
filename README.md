@@ -19,7 +19,7 @@ A one-page writing site, styled after New Style. Hosted free on GitHub Pages.
 </article>
 ```
 
-Each entry shows as one line: the title in italics, then the date.
+Each entry shows the title in italics with the date underneath.
 
 All of this can be done in the browser on github.com: open a file, click the pencil to edit, or use **Add file → Upload files**. The site updates about a minute after you commit.
 

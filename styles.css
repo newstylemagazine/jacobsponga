@@ -80,7 +80,7 @@ body.writing-page .container { max-width: 760px; }
 /* Article page */
 p.story-title { font-style: italic; font-size: 1.05em; text-align: center; margin-bottom: 5px; }
 p.story-author { font-size: 1.05em; text-align: center; }
-.story-spacer { height: 20em; }
+.story-spacer { height: 3em; }
 .story-body { font-size: 1.05em; line-height: 1.4; }
 .story-body p { margin-bottom: 0.5em; }
 .story-image { margin: 0 auto 3em; width: 75%; }
@@ -118,6 +118,6 @@ footer {
     .container, body.writing-page .container { max-width: 100%; padding: 0 20px; }
     header h1 { font-size: 1.25em; }
     main { padding: 20px 0 40px; }
-    .story-spacer { height: 8em; }
+    .story-spacer { height: 2em; }
     .story-image { width: 100%; }
 }

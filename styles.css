@@ -87,9 +87,10 @@ p.story-author { font-size: 1.05em; text-align: center; }
 .story-image img { width: 100%; display: block; }
 
 .story-body blockquote {
-    margin: 0.8em 0 1em;
-    padding: 0 0.8em;
+    margin: 1em 15%;
+    padding: 0;
 }
+@media (max-width: 768px) { .story-body blockquote { margin: 1em 7%; } }
 .story-body blockquote p { margin-bottom: 0.5em; }
 .math-block, mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; max-width: 100%; }
 .math-block { margin: 1em 0; }
